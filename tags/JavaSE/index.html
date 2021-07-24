@@ -191,61 +191,48 @@
   </div>
 </header>
 
-    <main class="app-body">
+    <div id="article-banner">
+  <h2>Archives</h2>
+  <p class="post-date">Archives</p>
+</div>
+<main class="app-body" id="archives">
   
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/blog/2021/07/24/JavaSE%E5%9F%BA%E7%A1%80/">JavaSE基础</a>
-      </h2>
-      <p class="article-date">July 24, 2021</p>
-      
-        
-  <a href="/blog/blog/tags#JavaSE" >
-    <span class="tag-code">JavaSE</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          <p>这是一份 JavaSE 语法入门指南</p>
-        
+  
+  
+    <section class="time-section">
+  <h1 class="section-year">
+    2021
+  </h1>
+  <div class="section-list">
+    
+    
+      <div class="section-list-item">
+        <a href="/blog/2021/07/24/JavaSE%E5%9F%BA%E7%A1%80/" class="archive-title">JavaSE基础</a>
+        <p class="archive-date">07-24</p>
       </div>
-      <a class="more" href="/blog/2021/07/24/JavaSE%E5%9F%BA%E7%A1%80/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/blog/2021/07/24/test/">test</a>
-      </h2>
-      <p class="article-date">July 24, 2021</p>
-      
-      <div class="article-summary">
-        
-          
-        
+    
+      <div class="section-list-item">
+        <a href="/blog/2021/07/24/test/" class="archive-title">test</a>
+        <p class="archive-date">07-24</p>
       </div>
-      <a class="more" href="/blog/2021/07/24/test/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/blog/2021/07/24/hello-world/">Hello World</a>
-      </h2>
-      <p class="article-date">July 24, 2021</p>
-      
-      <div class="article-summary">
-        
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer ...
-        
+    
+      <div class="section-list-item">
+        <a href="/blog/2021/07/24/hello-world/" class="archive-title">Hello World</a>
+        <p class="archive-date">07-24</p>
       </div>
-      <a class="more" href="/blog/2021/07/24/hello-world/">Read more</a>
-    </article>
-  
-
+    
+  </div>
+</section>
   
 </main>
 
-
+<script>
+  (function () {
+    var url = 'https://csliujw.github.io/blog/tags/JavaSE/index.html';
+    $('#article-banner').geopattern(url);
+    $('.header').removeClass('fixed-header');
+  })();
+</script>
     <div class="scroll-top">
   <span class="arrow-icon"></span>
 </div>
